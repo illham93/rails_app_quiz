@@ -7,4 +7,10 @@ Rails.application.routes.draw do
 
   # Defines the root path route ("/")
   # root "posts#index"
+
+  get '/jobs' => 'jobs#index'
+
+  post '/jobs' => 'jobs#create'
+
+  post '/jobs/:id' => 'jobs#lookup'
 end
